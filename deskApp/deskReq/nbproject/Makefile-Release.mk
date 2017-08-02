@@ -35,9 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/_ext/59aedd0e/DeskRequester.o \
 	${OBJECTDIR}/_ext/aa91408b/main.o \
 	${OBJECTDIR}/_ext/aff35550/AutonomousCommFrame.o \
+	${OBJECTDIR}/_ext/366a36a8/DeskRequester.o \
 	${OBJECTDIR}/_ext/c6fb8ee4/ZmqRequester.o \
 	${OBJECTDIR}/_ext/c6fb8ee4/iZmq.o
 
@@ -66,11 +66,6 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/deskreq: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/deskreq ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/_ext/59aedd0e/DeskRequester.o: ../../../../../ws/Linux/myLib/Library/src/Smartdesk/DeskRequester.cpp
-	${MKDIR} -p ${OBJECTDIR}/_ext/59aedd0e
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/59aedd0e/DeskRequester.o ../../../../../ws/Linux/myLib/Library/src/Smartdesk/DeskRequester.cpp
-
 ${OBJECTDIR}/_ext/aa91408b/main.o: /home/thanh/aos/system/SMART_DESK/deskApp/deskReq/main.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/aa91408b
 	${RM} "$@.d"
@@ -80,6 +75,11 @@ ${OBJECTDIR}/_ext/aff35550/AutonomousCommFrame.o: /home/thanh/ws/Linux/myLib/Lib
 	${MKDIR} -p ${OBJECTDIR}/_ext/aff35550
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/aff35550/AutonomousCommFrame.o /home/thanh/ws/Linux/myLib/Library/src/Device/AutonomousCommFrame.c
+
+${OBJECTDIR}/_ext/366a36a8/DeskRequester.o: /home/thanh/ws/Linux/myLib/Library/src/Smartdesk/DeskRequester.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/366a36a8
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/366a36a8/DeskRequester.o /home/thanh/ws/Linux/myLib/Library/src/Smartdesk/DeskRequester.cpp
 
 ${OBJECTDIR}/_ext/c6fb8ee4/ZmqRequester.o: /home/thanh/ws/Linux/myLib/Library/src/ZMQ/ZmqRequester.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/c6fb8ee4

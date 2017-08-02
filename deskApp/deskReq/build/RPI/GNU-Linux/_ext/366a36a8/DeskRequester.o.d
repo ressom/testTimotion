@@ -1,5 +1,5 @@
-build/RPI/GNU-Linux/_ext/59aedd0e/DeskRequester.o: \
- ../../../../../ws/Linux/myLib/Library/src/Smartdesk/DeskRequester.cpp \
+build/RPI/GNU-Linux/_ext/366a36a8/DeskRequester.o: \
+ /home/thanh/ws/Linux/myLib/Library/src/Smartdesk/DeskRequester.cpp \
  /home/thanh/ws/Linux/myLib/Library/inc/SmartDesk/DeskRequester.hpp \
  /home/thanh/ws/Linux/myLib/Library/inc/ZMQ/ZmqRequester.hpp \
  /home/thanh/ws/Linux/myLib/Library/inc/ZMQ/iZmq.hpp \

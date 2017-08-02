@@ -7,8 +7,8 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>/home/thanh/ws/Linux/myLib/Library/inc/Device/AutonomousCommFrame.h</itemPath>
-      <itemPath>../../../../../ws/Linux/myLib/Library/inc/SmartDesk/DeskRequester.hpp</itemPath>
-      <itemPath>../../../../../ws/Linux/myLib/Library/inc/ZMQ/ZmqRequester.hpp</itemPath>
+      <itemPath>/home/thanh/ws/Linux/myLib/Library/inc/SmartDesk/DeskRequester.hpp</itemPath>
+      <itemPath>/home/thanh/ws/Linux/myLib/Library/inc/ZMQ/ZmqRequester.hpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -18,7 +18,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>/home/thanh/ws/Linux/myLib/Library/src/Device/AutonomousCommFrame.c</itemPath>
-      <itemPath>../../../../../ws/Linux/myLib/Library/src/Smartdesk/DeskRequester.cpp</itemPath>
+      <itemPath>/home/thanh/ws/Linux/myLib/Library/src/Smartdesk/DeskRequester.cpp</itemPath>
       <itemPath>/home/thanh/ws/Linux/myLib/Library/src/ZMQ/ZmqRequester.cpp</itemPath>
       <itemPath>/home/thanh/ws/Linux/myLib/Library/src/ZMQ/iZmq.cpp</itemPath>
       <itemPath>/home/thanh/aos/system/SMART_DESK/deskApp/deskReq/main.cpp</itemPath>
@@ -41,6 +41,8 @@
     <Elem>/home/thanh/aos/system/SMART_DESK/deskApp/deskReq</Elem>
     <Elem>/home/thanh/ws/Linux/myLib/Library/inc/ZMQ</Elem>
     <Elem>/home/thanh/ws/Linux/myLib/Library/src/ZMQ</Elem>
+    <Elem>/home/thanh/ws/Linux/myLib/Library/inc/SmartDesk</Elem>
+    <Elem>/home/thanh/ws/Linux/myLib/Library/src/Smartdesk</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -56,7 +58,6 @@
           <standard>10</standard>
           <commandlineTool>gcc</commandlineTool>
           <incDir>
-            <pElem>user/inc</pElem>
             <pElem>/home/thanh/ws/Linux/myLib/Library/inc</pElem>
           </incDir>
         </cTool>
@@ -65,7 +66,6 @@
           <standard>8</standard>
           <commandlineTool>g++</commandlineTool>
           <incDir>
-            <pElem>user/inc</pElem>
             <pElem>/home/thanh/ws/Linux/myLib/Library/inc</pElem>
           </incDir>
         </ccTool>
@@ -84,21 +84,6 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
-      <item path="../../../../../ws/Linux/myLib/Library/inc/SmartDesk/DeskRequester.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../../../ws/Linux/myLib/Library/inc/ZMQ/ZmqRequester.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../../../ws/Linux/myLib/Library/src/Smartdesk/DeskRequester.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
       <item path="/home/thanh/aos/system/SMART_DESK/deskApp/deskReq/main.cpp"
             ex="false"
             tool="1"
@@ -109,9 +94,24 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="/home/thanh/ws/Linux/myLib/Library/inc/SmartDesk/DeskRequester.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/thanh/ws/Linux/myLib/Library/inc/ZMQ/ZmqRequester.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/home/thanh/ws/Linux/myLib/Library/src/Device/AutonomousCommFrame.c"
             ex="false"
             tool="0"
+            flavor2="0">
+      </item>
+      <item path="/home/thanh/ws/Linux/myLib/Library/src/Smartdesk/DeskRequester.cpp"
+            ex="false"
+            tool="1"
             flavor2="0">
       </item>
       <item path="/home/thanh/ws/Linux/myLib/Library/src/ZMQ/ZmqRequester.cpp"
@@ -145,21 +145,6 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="../../../../../ws/Linux/myLib/Library/inc/SmartDesk/DeskRequester.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../../../ws/Linux/myLib/Library/inc/ZMQ/ZmqRequester.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../../../ws/Linux/myLib/Library/src/Smartdesk/DeskRequester.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
       <item path="/home/thanh/aos/system/SMART_DESK/deskApp/deskReq/main.cpp"
             ex="false"
             tool="1"
@@ -170,9 +155,24 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="/home/thanh/ws/Linux/myLib/Library/inc/SmartDesk/DeskRequester.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/thanh/ws/Linux/myLib/Library/inc/ZMQ/ZmqRequester.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/home/thanh/ws/Linux/myLib/Library/src/Device/AutonomousCommFrame.c"
             ex="false"
             tool="0"
+            flavor2="0">
+      </item>
+      <item path="/home/thanh/ws/Linux/myLib/Library/src/Smartdesk/DeskRequester.cpp"
+            ex="false"
+            tool="1"
             flavor2="0">
       </item>
       <item path="/home/thanh/ws/Linux/myLib/Library/src/ZMQ/ZmqRequester.cpp"
@@ -217,21 +217,6 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
-      <item path="../../../../../ws/Linux/myLib/Library/inc/SmartDesk/DeskRequester.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../../../ws/Linux/myLib/Library/inc/ZMQ/ZmqRequester.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../../../ws/Linux/myLib/Library/src/Smartdesk/DeskRequester.cpp"
-            ex="false"
-            tool="1"
-            flavor2="0">
-      </item>
       <item path="/home/thanh/aos/system/SMART_DESK/deskApp/deskReq/main.cpp"
             ex="false"
             tool="1"
@@ -242,9 +227,24 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="/home/thanh/ws/Linux/myLib/Library/inc/SmartDesk/DeskRequester.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/thanh/ws/Linux/myLib/Library/inc/ZMQ/ZmqRequester.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/home/thanh/ws/Linux/myLib/Library/src/Device/AutonomousCommFrame.c"
             ex="false"
             tool="0"
+            flavor2="0">
+      </item>
+      <item path="/home/thanh/ws/Linux/myLib/Library/src/Smartdesk/DeskRequester.cpp"
+            ex="false"
+            tool="1"
             flavor2="0">
       </item>
       <item path="/home/thanh/ws/Linux/myLib/Library/src/ZMQ/ZmqRequester.cpp"

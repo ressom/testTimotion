@@ -4,7 +4,7 @@ SitPos:870
 StandPos:1100
 SerialDevice:/dev/ttyUSB0
 ZmqIPC:ipc:///tmp/desk_control:9999
-Controller:Timotion
+Controller:AddonBoard
 Unit:met
 
 

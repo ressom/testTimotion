@@ -24,6 +24,7 @@
                    projectFiles="true">
       <itemPath>/home/thanh/ws/Linux/myLib/Library/src/Device/AutonomousCommFrame.c</itemPath>
       <itemPath>/home/thanh/ws/Linux/myLib/Library/src/Smartdesk/Desk.cpp</itemPath>
+      <itemPath>/home/thanh/ws/Linux/myLib/Library/src/LCD/MyLcd.cpp</itemPath>
       <itemPath>/home/thanh/ws/Linux/myLib/Library/src/Device/TimboxCommFrame.c</itemPath>
       <itemPath>/home/thanh/ws/Linux/myLib/Library/src/TIMER/Timer.cpp</itemPath>
       <itemPath>/home/thanh/ws/Linux/myLib/Library/src/Smartdesk/TimotionController.cpp</itemPath>
@@ -55,6 +56,7 @@
     <Elem>/home/thanh/ws/Linux/myLib/Library/src/COMMUNICATION</Elem>
     <Elem>/home/thanh/ws/Linux/myLib/Library/src/ZMQ</Elem>
     <Elem>/home/thanh/aos/system/SMART_DESK/deskApp/deskRep</Elem>
+    <Elem>/home/thanh/ws/Linux/myLib/Library/src/LCD</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -147,6 +149,11 @@
             tool="0"
             flavor2="0">
       </item>
+      <item path="/home/thanh/ws/Linux/myLib/Library/src/LCD/MyLcd.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
       <item path="/home/thanh/ws/Linux/myLib/Library/src/Smartdesk/Desk.cpp"
             ex="false"
             tool="1"
@@ -173,8 +180,6 @@
             flavor2="0">
       </item>
       <item path="Doc/Readme" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="data.dat" ex="false" tool="3" flavor2="0">
       </item>
       <item path="user/src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -244,6 +249,11 @@
             tool="0"
             flavor2="0">
       </item>
+      <item path="/home/thanh/ws/Linux/myLib/Library/src/LCD/MyLcd.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
       <item path="/home/thanh/ws/Linux/myLib/Library/src/Smartdesk/Desk.cpp"
             ex="false"
             tool="1"
@@ -270,8 +280,6 @@
             flavor2="0">
       </item>
       <item path="Doc/Readme" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="data.dat" ex="false" tool="3" flavor2="0">
       </item>
       <item path="user/src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -356,6 +364,11 @@
             tool="0"
             flavor2="0">
       </item>
+      <item path="/home/thanh/ws/Linux/myLib/Library/src/LCD/MyLcd.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
       <item path="/home/thanh/ws/Linux/myLib/Library/src/Smartdesk/Desk.cpp"
             ex="false"
             tool="1"
@@ -382,8 +395,6 @@
             flavor2="0">
       </item>
       <item path="Doc/Readme" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="data.dat" ex="false" tool="3" flavor2="0">
       </item>
       <item path="user/src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>

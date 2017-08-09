@@ -22,10 +22,10 @@
 #include "ZMQ/ZmqRequester.hpp"
 #include<inttypes.h>
 using namespace std;
-static TiMotionController mDesk;
-std::string s;
+ 
 int main(int argc, char** argv) {
-//    int data[1];
+    TiMotionController *mDesk = TiMotionController::getInstance();
+    std::string s;
     if (argc == 2){
         s = argv[1];
         printf("device: %s\n",s.data());
@@ -37,17 +37,17 @@ int main(int argc, char** argv) {
     tim.tv_sec = 0;
     tim.tv_nsec = 100000000L; // 100ms
     if (argc == 2){
-        mDesk.Init("data.dat",s);
+        mDesk->Init("data.dat",s);
     }
     else{
-        mDesk.Init("data.dat");
+        mDesk->Init("data.dat");
     }
     
-    mDesk.Start();
+    mDesk->Start();
     
     while(1){
         nanosleep(&tim , &tim2);
-        mDesk.Update();
+        mDesk->Update();
     }
 }
 

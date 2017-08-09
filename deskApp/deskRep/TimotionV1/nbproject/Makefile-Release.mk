@@ -38,6 +38,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/_ext/353e939c/Uart.o \
 	${OBJECTDIR}/_ext/aff35550/AutonomousCommFrame.o \
 	${OBJECTDIR}/_ext/aff35550/TimboxCommFrame.o \
+	${OBJECTDIR}/_ext/c6fb5913/MyLcd.o \
 	${OBJECTDIR}/_ext/366a36a8/Desk.o \
 	${OBJECTDIR}/_ext/366a36a8/TimotionController.o \
 	${OBJECTDIR}/_ext/f5fd010b/Timer.o \
@@ -84,6 +85,11 @@ ${OBJECTDIR}/_ext/aff35550/TimboxCommFrame.o: /home/thanh/ws/Linux/myLib/Library
 	${MKDIR} -p ${OBJECTDIR}/_ext/aff35550
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/aff35550/TimboxCommFrame.o /home/thanh/ws/Linux/myLib/Library/src/Device/TimboxCommFrame.c
+
+${OBJECTDIR}/_ext/c6fb5913/MyLcd.o: /home/thanh/ws/Linux/myLib/Library/src/LCD/MyLcd.cpp
+	${MKDIR} -p ${OBJECTDIR}/_ext/c6fb5913
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/c6fb5913/MyLcd.o /home/thanh/ws/Linux/myLib/Library/src/LCD/MyLcd.cpp
 
 ${OBJECTDIR}/_ext/366a36a8/Desk.o: /home/thanh/ws/Linux/myLib/Library/src/Smartdesk/Desk.cpp
 	${MKDIR} -p ${OBJECTDIR}/_ext/366a36a8

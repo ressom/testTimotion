@@ -20,6 +20,7 @@
                 <sourceRootElem>/home/thanh/ws/Linux/myLib/Library/src/COMMUNICATION</sourceRootElem>
                 <sourceRootElem>/home/thanh/ws/Linux/myLib/Library/src/ZMQ</sourceRootElem>
                 <sourceRootElem>/home/thanh/aos/system/SMART_DESK/deskApp/deskRep</sourceRootElem>
+                <sourceRootElem>/home/thanh/ws/Linux/myLib/Library/src/LCD</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

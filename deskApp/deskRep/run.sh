@@ -5,6 +5,8 @@ export PATH=$PATH:$PWD
 a=$(ls /dev/ttyS* |grep ttyS0)
 if [ "$a" = "/dev/ttyS0" ] ; then
 	sudo chmod 777 /dev/ttyS0
+	sudo chmod a+rw /sys/class/backlight/rpi_backlight/bl_power
+        sudo chmod a+rw /sys/class/backlight/rpi_backlight/brightness
 	echo "Detected /dev/ttyS0"
 fi
 
@@ -45,7 +47,11 @@ if [ -f "$dataFile" ] ; then
 		echo "Selected Timotion Box"
 		if [ -f "TimotionV1/user/$os/deskrep" ] ; then
 			sudo chmod +x  TimotionV1/user/$os/deskrep
-			./TimotionV1/user/$os/deskrep $device
+			if  ps -ax |grep deskrep | grep -v grep  ; then
+				echo "App is runnig"
+			else
+				./TimotionV1/user/$os/deskrep $device
+			fi
 		else
 			echo "/TimotionV1/user/$os/deskrep not found "
 		fi
@@ -56,7 +62,12 @@ if [ -f "$dataFile" ] ; then
 			echo "Selected Jiecang Box"
 			if [ -f "Jiecang/user/$os/deskrep" ] ; then
 				sudo chmod +x Jiecang/user/$os/deskrep
-				./Jiecang/user/$os/deskrep $device
+				if ps -ax |grep deskrep | grep -v grep  ; then
+					echo "App is runnig"
+				else
+					./Jiecang/user/$os/deskrep $device
+				fi
+				
 			else
 				echo "/Jiecang/user/$os/deskrep not found"
 			fi
@@ -67,7 +78,11 @@ if [ -f "$dataFile" ] ; then
 				echo "selected AddonBoard"
 				if [ -f "AddonBoard/user/$os/deskrep" ] ; then
 					sudo chmod +x AddonBoard/user/$os/deskrep
-					./AddonBoard/user/$os/deskrep $device
+					if ps -ax |grep deskrep | grep -v grep  ; then
+						echo "App is runnig"
+					else
+						./AddonBoard/user/$os/deskrep $device
+					fi
 				else
 					echo "/AddonBoard/user/$os/deskrep not found"
 				fi

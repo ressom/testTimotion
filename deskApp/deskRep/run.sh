@@ -5,6 +5,8 @@ export PATH=$PATH:$PWD
 a=$(ls /dev/ttyS* |grep ttyS0)
 if [ "$a" = "/dev/ttyS0" ] ; then
 	sudo chmod 777 /dev/ttyS0
+	sudo chmod a+ew /sys/class/backlight/rpi_backlight/bl_power
+	sudo chmod a+ew /sys/class/backlight/rpi_backlight/brightness
 	echo "Detected /dev/ttyS0"
 fi
 

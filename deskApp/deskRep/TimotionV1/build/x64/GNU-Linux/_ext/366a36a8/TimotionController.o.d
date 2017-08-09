@@ -9,7 +9,8 @@ build/x64/GNU-Linux/_ext/366a36a8/TimotionController.o: \
  /home/thanh/ws/Linux/myLib/Library/inc/Device/AutonomousCommFrame.h \
  /home/thanh/ws/Linux/myLib/Library/inc/Device/TimboxCommFrame.h \
  /home/thanh/ws/Linux/myLib/Library/inc/COMMUNICATION/Uart.hpp \
- /home/thanh/ws/Linux/myLib/Library/inc/TIMER/Timer.hpp
+ /home/thanh/ws/Linux/myLib/Library/inc/TIMER/Timer.hpp \
+ /home/thanh/ws/Linux/myLib/Library/inc/LCD/MyLcd.hpp
 
 /home/thanh/ws/Linux/myLib/Library/inc/SmartDesk/TimotionController.hpp:
 
@@ -30,3 +31,5 @@ build/x64/GNU-Linux/_ext/366a36a8/TimotionController.o: \
 /home/thanh/ws/Linux/myLib/Library/inc/COMMUNICATION/Uart.hpp:
 
 /home/thanh/ws/Linux/myLib/Library/inc/TIMER/Timer.hpp:
+
+/home/thanh/ws/Linux/myLib/Library/inc/LCD/MyLcd.hpp:

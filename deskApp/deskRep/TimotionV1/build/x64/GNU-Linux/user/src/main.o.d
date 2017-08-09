@@ -9,6 +9,7 @@ build/x64/GNU-Linux/user/src/main.o: user/src/main.cpp \
  /home/thanh/ws/Linux/myLib/Library/inc/Device/TimboxCommFrame.h \
  /home/thanh/ws/Linux/myLib/Library/inc/COMMUNICATION/Uart.hpp \
  /home/thanh/ws/Linux/myLib/Library/inc/TIMER/Timer.hpp \
+ /home/thanh/ws/Linux/myLib/Library/inc/LCD/MyLcd.hpp \
  /home/thanh/ws/Linux/myLib/Library/inc/ZMQ/ZmqRequester.hpp \
  /home/thanh/ws/Linux/myLib/Library/inc/ZMQ/ZmqReplier.hpp
 
@@ -31,6 +32,8 @@ build/x64/GNU-Linux/user/src/main.o: user/src/main.cpp \
 /home/thanh/ws/Linux/myLib/Library/inc/COMMUNICATION/Uart.hpp:
 
 /home/thanh/ws/Linux/myLib/Library/inc/TIMER/Timer.hpp:
+
+/home/thanh/ws/Linux/myLib/Library/inc/LCD/MyLcd.hpp:
 
 /home/thanh/ws/Linux/myLib/Library/inc/ZMQ/ZmqRequester.hpp:
 

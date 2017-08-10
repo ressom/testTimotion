@@ -35,7 +35,7 @@ int main(int argc, char** argv) {
     printf ("Current ØMQ version is %d.%d.%d\n", major, minor, patch);
     struct timespec tim,tim2;
     tim.tv_sec = 0;
-    tim.tv_nsec = 100000000L; // 100ms
+    tim.tv_nsec = 1000000L; // 1ms
     if (argc == 2){
         mDesk->Init("data.dat",s);
     }

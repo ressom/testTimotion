@@ -10,9 +10,8 @@
       <itemPath>/home/thanh/ws/Linux/myLib/Library/inc/Device/AutonomousCommFrame.h</itemPath>
       <itemPath>/home/thanh/ws/Linux/myLib/Library/inc/SmartDesk/Desk.hpp</itemPath>
       <itemPath>/home/thanh/ws/Linux/myLib/Library/inc/SmartDesk/LinearDevice.hpp</itemPath>
+      <itemPath>/home/thanh/ws/Linux/myLib/Library/inc/TIMER/Timer.hpp</itemPath>
       <itemPath>/home/thanh/ws/Linux/myLib/Library/inc/SmartDesk/TimotionController.hpp</itemPath>
-      <itemPath>../../../../../../ws/Linux/myLib/Library/inc/COMMUNICATION/Uart.hpp</itemPath>
-      <itemPath>../../../../../../ws/Linux/myLib/Library/inc/ZMQ/ZmqReplier.hpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -104,16 +103,6 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
-      <item path="../../../../../../ws/Linux/myLib/Library/inc/COMMUNICATION/Uart.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../../../../ws/Linux/myLib/Library/inc/ZMQ/ZmqReplier.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="/home/thanh/ws/Linux/myLib/Library/inc/Device/AutonomousCommFrame.h"
             ex="false"
             tool="3"
@@ -130,6 +119,11 @@
             flavor2="0">
       </item>
       <item path="/home/thanh/ws/Linux/myLib/Library/inc/SmartDesk/TimotionController.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/thanh/ws/Linux/myLib/Library/inc/TIMER/Timer.hpp"
             ex="false"
             tool="3"
             flavor2="0">
@@ -204,16 +198,6 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="../../../../../../ws/Linux/myLib/Library/inc/COMMUNICATION/Uart.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../../../../ws/Linux/myLib/Library/inc/ZMQ/ZmqReplier.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="/home/thanh/ws/Linux/myLib/Library/inc/Device/AutonomousCommFrame.h"
             ex="false"
             tool="3"
@@ -230,6 +214,11 @@
             flavor2="0">
       </item>
       <item path="/home/thanh/ws/Linux/myLib/Library/inc/SmartDesk/TimotionController.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/thanh/ws/Linux/myLib/Library/inc/TIMER/Timer.hpp"
             ex="false"
             tool="3"
             flavor2="0">
@@ -319,16 +308,6 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
-      <item path="../../../../../../ws/Linux/myLib/Library/inc/COMMUNICATION/Uart.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
-      <item path="../../../../../../ws/Linux/myLib/Library/inc/ZMQ/ZmqReplier.hpp"
-            ex="false"
-            tool="3"
-            flavor2="0">
-      </item>
       <item path="/home/thanh/ws/Linux/myLib/Library/inc/Device/AutonomousCommFrame.h"
             ex="false"
             tool="3"
@@ -345,6 +324,11 @@
             flavor2="0">
       </item>
       <item path="/home/thanh/ws/Linux/myLib/Library/inc/SmartDesk/TimotionController.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/thanh/ws/Linux/myLib/Library/inc/TIMER/Timer.hpp"
             ex="false"
             tool="3"
             flavor2="0">

@@ -2,30 +2,15 @@
 #add current path to PATH
 export PATH=$PATH:$PWD
 # Detect Serial device files
-a=$(ls /dev/ttyS* |grep ttyS0)
-if [ "$a" = "/dev/ttyS0" ] ; then
-	sudo chmod 777 /dev/ttyS0
-	sudo chmod a+rw /sys/class/backlight/rpi_backlight/bl_power
-        sudo chmod a+rw /sys/class/backlight/rpi_backlight/brightness
-	echo "Detected /dev/ttyS0"
-fi
-
-a=$(ls /dev/serial* | grep serial0)
-if [ "$a" = "/dev/serial0" ] ; then
-	sudo chmod 777 /dev/serial0
-	echo "Detected /dev/serial0"
-fi
-
-a=$(ls /dev/ttyUSB* | grep USB0)
-if [ "$a" = "/dev/ttyUSB0" ] ; then
-	sudo chmod 777 /dev/ttyUSB0
-	echo "detect /dev/ttyUSB0"
-fi
 # 
 dataFile="data.dat"
 os="none"
 #Detect which board to run
-if uname -m |grep x86_64 ; then
+if  uname -m  | grep x86_64  ; then
+	if [ -e "/dev/ttyUSB0" ] ; then
+        	sudo chmod 777 /dev/ttyUSB0
+        	echo "detect /dev/ttyUSB0"
+	fi
 	os="x64"
 	device="/dev/ttyUSB0"
 	echo "use device $device"
@@ -33,6 +18,16 @@ if uname -m |grep x86_64 ; then
 fi
 
 if uname -m |grep arm ; then
+	if [ -e "/dev/ttyS0" ] ; then
+        	sudo chmod 777 /dev/ttyS0
+        	sudo chmod a+rw /sys/class/backlight/rpi_backlight/bl_power
+        	sudo chmod a+rw /sys/class/backlight/rpi_backlight/brightness
+        	echo "Detected /dev/ttyS0"
+	fi
+	if [ -e "/dev/serial0" ] ; then
+        	sudo chmod 777 /dev/serial0
+        	echo "Detected /dev/serial0"
+	fi
 	os="RPI"
 	device="/dev/ttyS0"
 	echo "use device $device"
